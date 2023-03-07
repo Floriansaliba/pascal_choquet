@@ -1,4 +1,3 @@
-import { useLayoutEffect, useState } from 'react';
 import { Logo } from '../Logo/Logo';
 import NavBar from '../NavBar/NavBar';
 

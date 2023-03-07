@@ -1,0 +1,21 @@
+.contact-bar {
+  width: 100%;
+  height: 30px;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  &__svgPhone {
+    height: 50%;
+    margin-right: 5px;
+    & path {
+      fill: white;
+    }
+  }
+  &__phone {
+    display: block;
+    color: $color_light;
+    font-weight: 700;
+  }
+}
