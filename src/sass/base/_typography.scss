@@ -1,4 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Condiment&display=swap");
+@import '../abstracts/variables';
+@import url('https://fonts.googleapis.com/css2?family=Condiment&display=swap');
 
 //Font Family
-$font-main: "Condiment", cursive;
+$font-main: 'Condiment', cursive;
+
+.section-title {
+  font-size: $fontSize_big;
+  padding: 20px;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  padding: 20px;
+  font-size: $fontSize_normal;
+  font-weight: 700;
+}

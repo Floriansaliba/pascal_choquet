@@ -1,22 +1,22 @@
 .services {
   width: 100%;
   background-color: lightblue;
-  &__title {
-    font-size: $fonSize_big;
-    padding: 20px;
-    font-weight: 700;
-  }
+
   &__description {
     padding: 20px;
     font-weight: 500;
     letter-spacing: 1px;
   }
-  &__subtitle {
-    padding: 20px;
-    font-size: $fontSize_normal;
-    font-weight: 700;
-  }
   &__list {
     padding: 10px 20px;
+    &__el {
+      padding: 10px 0px;
+      border: solid 1px;
+      background-color: $color_important;
+      color: $color_light;
+      border-radius: 10px;
+      padding-left: 10px;
+      margin-bottom: 5px;
+    }
   }
 }
