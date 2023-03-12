@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import map from '../../assets/images/carte_metropole.jpg';
-import villes from '../../data/data.js';
+import villes from '../../data/villes.js';
 
 function Sectorisation() {
   const [message, setMessage] = useState(null);
@@ -35,20 +35,25 @@ function Sectorisation() {
   return (
     <section className='sectorisation'>
       <h2 className='section-title'>Mon secteur d'intervention</h2>
-      <p className='services__description'>
+      <p className='paragraphe'>
         "J'interviens sur Rennes Métropole. Veuillez entrer votre code postal
         ci-dessous afin de vous assurer que vous vous situez bien dans ma zone
         d'intervention."
       </p>
       <br />
       <br />
-      <label htmlFor='postal-code'>
+      <label htmlFor='postal-code' className='paragraphe'>
         Votre code postal : <br />
       </label>
-      <input onChange={handleChange} type='number' name='postal-code' />
+      <input
+        className='input'
+        onChange={handleChange}
+        type='number'
+        name='postal-code'
+      />
       <br />
       <br />
-      {message}
+      <p className='paragraphe'>{message}</p>
 
       <div className='sectorisation__imgFrame'>
         <img

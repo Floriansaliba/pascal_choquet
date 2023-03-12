@@ -1,4 +1,48 @@
 .tarifs {
-  background-color: lightcoral;
-  height: 500px;
+  font-size: $fontSize_small;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  &__table {
+    width: 100%;
+    max-width: 620px;
+    margin: auto;
+    &__head {
+      background: $color_background;
+      color: $color_dark;
+      &__line {
+        height: 50px;
+        &__presta {
+          width: 45%;
+        }
+        & > th {
+          vertical-align: middle;
+          border-right: solid 1px $color_light;
+        }
+      }
+    }
+    &__body {
+      background-color: lightgray;
+      &__line {
+        vertical-align: middle;
+        height: 40px;
+
+        &:nth-child(odd) {
+          background-color: lightblue;
+        }
+        &:nth-child(even) {
+          background-color: lightcyan;
+        }
+        &__description {
+          vertical-align: middle;
+          padding: 5px;
+          border-right: solid 1px $color_light;
+        }
+        &__price {
+          text-align: center;
+          vertical-align: middle;
+          border-right: solid 1px $color_light;
+        }
+      }
+    }
+  }
 }

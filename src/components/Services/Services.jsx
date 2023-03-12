@@ -4,7 +4,7 @@ function Services() {
   return (
     <section className='services'>
       <h2 className='section-title'>Mes services</h2>
-      <p className='services__description'>
+      <p className='paragraphe'>
         "Spécialisé en serrurerie dans le dépannage et les interventions
         d'urgence auprès des particuliers et des professionnels, je suis à même
         de répondre au mieux à vos attentes dans les 30 minutes pour votre

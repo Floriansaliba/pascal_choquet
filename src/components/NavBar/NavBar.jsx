@@ -3,6 +3,12 @@ import BurgerMenu from '../BurgerMenu/BurgerMenu';
 
 function NavBar() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [contactSection, showContactSection] = useState(false);
+
+  const displayContact = () => {
+    showContactSection(!contactSection);
+    console.log(contactSection);
+  };
 
   useLayoutEffect(() => {
     const updateScreenWidth = () => {
