@@ -1,14 +1,13 @@
-import React, { useLayoutEffect, useState } from 'react';
+import React, { useContext, useLayoutEffect, useState } from 'react';
+import { ModalContext } from '../../pages/Home/Home';
+
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
 
 function NavBar() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  const [contactSection, showContactSection] = useState(false);
 
-  const displayContact = () => {
-    showContactSection(!contactSection);
-    console.log(contactSection);
-  };
+  const { modale, setModale } = useContext(ModalContext);
+  console.log(modale);
 
   useLayoutEffect(() => {
     const updateScreenWidth = () => {
@@ -16,10 +15,11 @@ function NavBar() {
     };
     window.addEventListener('resize', updateScreenWidth);
     updateScreenWidth();
+    console.log('updated');
     return () => {
       window.removeEventListener('resize', updateScreenWidth);
     };
-  }, []);
+  }, [screenWidth, setScreenWidth]);
 
   if (screenWidth > 576) {
     return (
@@ -47,7 +47,15 @@ function NavBar() {
             <a href='/'>MENTIONS LEGALES</a>
           </li>
           <li className='nav__list__el'>
-            <a href='/'>CONTACT</a>
+            <a
+              onClick={(e) => {
+                e.preventDefault();
+                setModale((modale) => !modale);
+              }}
+              href='/'
+            >
+              CONTACT
+            </a>
           </li>
         </ul>
       </nav>

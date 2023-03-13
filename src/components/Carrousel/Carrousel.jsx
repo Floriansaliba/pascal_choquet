@@ -6,7 +6,7 @@ import ouvertureVoiture from '../../assets/images/ouverture_voiture.jpg';
 import React, { useState } from 'react';
 
 function Carrousel() {
-  const [counter, setCounter] = useState(0);
+  let [counter, setCounter] = useState(0);
 
   const pictures = [
     {
