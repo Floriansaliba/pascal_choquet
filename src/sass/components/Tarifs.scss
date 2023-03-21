@@ -7,10 +7,11 @@
     max-width: 620px;
     margin: auto;
     &__head {
-      background: $color_background;
-      color: $color_dark;
+      background: $color-dark;
+      color: $color_gold;
       &__line {
         height: 50px;
+        border: solid 2px $color-gold;
         &__presta {
           width: 45%;
         }
@@ -27,10 +28,10 @@
         height: 40px;
 
         &:nth-child(odd) {
-          background-color: lightblue;
+          background-color: $color-gold;
         }
         &:nth-child(even) {
-          background-color: lightcyan;
+          background-color: $color_light;
         }
         &__description {
           vertical-align: middle;
@@ -43,6 +44,26 @@
           border-right: solid 1px $color_light;
         }
       }
+    }
+  }
+}
+
+@media only screen and (min-width: $sm) and (max-width: $xl) {
+  .tarifs {
+    width: 70%;
+    margin: auto;
+    &__table {
+      margin-left: 20px;
+    }
+  }
+}
+
+@media only screen and (min-width: $xl) {
+  .tarifs {
+    width: 70%;
+    margin: auto;
+    &__table {
+      margin-left: 20px;
     }
   }
 }

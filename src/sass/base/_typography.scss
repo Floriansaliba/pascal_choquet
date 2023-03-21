@@ -1,14 +1,16 @@
 @import '../abstracts/variables';
 @import url('https://fonts.googleapis.com/css2?family=Condiment&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 //Font Family
-$font-main: 'Condiment', cursive;
+$font-main: 'Roboto', sans-serif;
 
 .section-title {
   font-size: $fontSize_big;
-  padding: 20px;
+  padding: 40px 20px 20px 20px;
   font-weight: 700;
   color: $color_gold;
+  line-height: 120%;
 }
 
 .section-subtitle {
@@ -20,13 +22,31 @@ $font-main: 'Condiment', cursive;
 
 .paragraphe {
   padding: 20px;
-  font-weight: 500;
+  font-size: $fontSize_normal;
+  font-weight: 400;
   letter-spacing: 1px;
-  line-height: 120%;
+  line-height: 150%;
+  color: $color_light;
+  &--validation {
+    margin: 10px 10px 20px 20px;
+    font-size: $fontSize_normal;
+    color: green;
+  }
+  &--unvalidation {
+    display: inline-block;
+    margin: 10px 10px 20px 20px;
+    font-size: $fontSize_normal;
+    color: red;
+  }
 }
 
 .input {
+  font-size: $fontSize_normal;
   font-weight: 500;
   letter-spacing: 1px;
-  margin: 20px;
+  margin: 10px 20px;
+  border: solid 1px $color-gold;
+  height: 20px;
+  border-radius: 10px;
+  padding: 5px;
 }

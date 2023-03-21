@@ -1,13 +1,14 @@
 //Font size
 $fontSize_normal: 18px;
 $fontSize_small: 13px;
-$fontSize_big: 24px;
+$fontSize_big: 34px;
 
 // Colors
-$color_light: white;
+$color_light: #e7e7e7;
 $color_dark: #171516;
+$color_dark-light: #272424;
 $color_important: #36a6a0;
-$color_gold: #c9be2c;
+$color_gold: #f7b432;
 $color_background: radial-gradient(
     ellipse farthest-corner at right bottom,
     #fedb37 0%,
@@ -30,3 +31,23 @@ $sm: 576px;
 $md: 768px;
 $lg: 992px;
 $xl: 1200px;
+
+// KeyFrames
+
+@keyframes dropDown {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 140px;
+  }
+}
+
+@keyframes comingFromRight {
+  from {
+    left: 100vw;
+  }
+  to {
+    left: 0px;
+  }
+}

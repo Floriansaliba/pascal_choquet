@@ -26,26 +26,24 @@ function NavBar() {
       <nav className='nav'>
         <ul className='nav__list'>
           <li className='nav__list__el'>
-            <a href='/'>ACCUEIL</a>
+            <a href='#header'>ACCUEIL</a>
           </li>
           <li className='nav__list__el'>
-            <a href='/'>SERVICES</a>
+            <a href='#services'>SERVICES</a>
           </li>
           <li className='nav__list__el'>
-            <a href='/'>SECTORISATION</a>
+            <a href='#sectorisation'>SECTORISATION</a>
           </li>
           <li className='nav__list__el'>
-            <a href='/'>TARIFS</a>
+            <a href='#tarifs'>TARIFS</a>
           </li>
           <li className='nav__list__el'>
-            <a href='/'>QUALITE</a>
+            <a href='#quality'>QUALITE</a>
           </li>
           <li className='nav__list__el'>
-            <a href='/'>AVIS CLIENTS</a>
+            <a href='#avis'>AVIS CLIENTS</a>
           </li>
-          <li className='nav__list__el'>
-            <a href='/'>MENTIONS LEGALES</a>
-          </li>
+
           <li className='nav__list__el'>
             <a
               onClick={(e) => {

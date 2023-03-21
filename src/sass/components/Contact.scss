@@ -1,11 +1,12 @@
 .contact {
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 0;
   width: 100vw;
   height: 100vh;
+  z-index: 40;
   background-color: $color_dark;
+  animation: comingFromRight 500ms ease-in-out;
 
   &__frame {
     position: relative;

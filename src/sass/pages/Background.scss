@@ -1,0 +1,15 @@
+html {
+  background-color: $color-dark-light;
+}
+
+#home {
+  font-family: $font-main;
+}
+
+#fixed-content {
+  z-index: 10;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}

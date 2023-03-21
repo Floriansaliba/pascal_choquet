@@ -4,13 +4,37 @@
   &__list {
     padding: 10px 20px;
     &__el {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-end;
       padding: 10px 0px;
-      border: solid 1px;
-      background-color: $color_important;
+
       color: $color_light;
-      border-radius: 10px;
+
       padding-left: 10px;
       margin-bottom: 5px;
+      & > svg {
+        width: 30px;
+        margin-right: 20px;
+        & > path {
+          fill: $color-gold;
+        }
+      }
     }
+  }
+}
+
+@media only screen and (min-width: $sm) and (max-width: $xl) {
+  .services {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: $xl) {
+  .services {
+    width: 70%;
+    margin: auto;
   }
 }

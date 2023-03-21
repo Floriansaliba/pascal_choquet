@@ -1,6 +1,7 @@
 .sectorisation {
   &__imgFrame {
     width: 100%;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -10,5 +11,27 @@
     max-width: 620px;
     border-radius: 10px;
     margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: $sm) and (max-width: $xl) {
+  .sectorisation {
+    width: 70%;
+    margin: auto;
+    &__imgFrame {
+      justify-content: flex-start;
+      margin-left: 20px;
+    }
+  }
+}
+
+@media only screen and (min-width: $xl) {
+  .sectorisation {
+    width: 70%;
+    margin: auto;
+    &__imgFrame {
+      justify-content: flex-start;
+      margin-left: 20px;
+    }
   }
 }

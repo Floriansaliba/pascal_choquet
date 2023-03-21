@@ -1,19 +1,22 @@
 import React from 'react';
 
-function Avis() {
+function Avis({ avisSection }) {
   return (
-    <section className='avis'>
+    <section className='avis' id='avis' ref={avisSection}>
       <h2 className='section-title'>Avis</h2>
       <p className='paragraphe'>
-        Je suis fier de partager les avis positifs de mes clients. La
-        satisfaction client est la priorité absolue de mon entreprise et je suis
-        heureux de constater que mes clients sont satisfaits de mes services.
-        Leurs commentaires sont une preuve de la qualité de mon travail et de
-        mon engagement à fournir des services fiables et efficaces. J'apprécie
-        tous les retours que j'ai reçus, car ils me permettent d'améliorer
-        constamment mes services pour répondre aux besoins de mes clients. Je
-        m'engage à continuer à fournir un service de qualité exceptionnelle et à
-        toujours chercher à dépasser les attentes de mes clients.
+        Je suis fier de partager les avis positifs de mes clients. <br />
+        <br /> La satisfaction client est la priorité absolue de mon entreprise
+        et je suis heureux de constater que mes clients sont satisfaits de mes
+        services. <br />
+        <br /> Leurs commentaires sont une preuve de la qualité de mon travail
+        et de mon engagement à fournir des services fiables et efficaces. <br />
+        <br /> J'apprécie tous les retours que j'ai reçus, car ils me permettent
+        d'améliorer constamment mes services pour répondre aux besoins de mes
+        clients. <br />
+        <br /> Je m'engage à continuer à fournir un service de qualité
+        exceptionnelle et à toujours chercher à dépasser les attentes de mes
+        clients.
       </p>
       <div className='avis__frame'>
         <button className='avis__button'>

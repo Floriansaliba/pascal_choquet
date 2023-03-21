@@ -1,4 +1,8 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
   width: 100%;
   height: 100px;
   display: flex;
@@ -6,9 +10,7 @@
   justify-content: space-between;
   align-items: center;
 
-  background: $color_background;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  background: $color_gold;
 }
 
 .nav {
@@ -50,7 +52,7 @@
 @media only screen and (min-width: $sm) and (max-width: $md) {
   .header {
     flex-direction: row;
-    height: 150px;
+
     padding-left: 20px;
   }
 
@@ -62,7 +64,7 @@
 
       &__el {
         padding: 5px 10px;
-        background-color: $color_important;
+        background-color: $color_dark;
         border-radius: 5px;
         margin-right: 10px;
         margin-bottom: 10px;
@@ -77,7 +79,7 @@
 @media only screen and (min-width: $md) and (max-width: $lg) {
   .header {
     flex-direction: row;
-    height: 150px;
+
     padding-left: 20px;
   }
   .nav {
@@ -88,7 +90,7 @@
 
       &__el {
         padding: 5px 10px;
-        background-color: $color_important;
+        background-color: $color_dark;
         border-radius: 5px;
         margin-right: 10px;
         margin-bottom: 10px;
@@ -103,7 +105,7 @@
 @media only screen and (min-width: $lg) and (max-width: $xl) {
   .header {
     flex-direction: row;
-    height: 150px;
+
     padding-left: 20px;
   }
   .nav {
@@ -114,11 +116,11 @@
       padding-right: 40px;
 
       &__el {
-        padding: 10px 20px;
-        background-color: $color_important;
-        border-radius: 10px;
-        margin-right: 20px;
-        margin-bottom: 20px;
+        padding: 5px 10px;
+        background-color: $color_dark;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
         & > a {
           font-size: $fontSize_normal;
         }
@@ -130,7 +132,7 @@
 @media only screen and (min-width: $xl) {
   .header {
     flex-direction: row;
-    height: 150px;
+
     padding-left: 20px;
   }
   .nav {
@@ -141,11 +143,11 @@
       padding-right: 40px;
 
       &__el {
-        padding: 10px 20px;
-        background-color: $color_important;
-        border-radius: 10px;
-        margin-right: 20px;
-        margin-bottom: 20px;
+        padding: 5px 10px;
+        background-color: $color_dark;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
         & > a {
           font-size: $fontSize_normal;
         }

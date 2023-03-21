@@ -1,0 +1,30 @@
+.mobile-nav {
+  background-color: $color_dark;
+  border-bottom: solid 2px $color-gold;
+  position: fixed;
+  animation: 300ms ease-in-out dropDown forwards;
+  z-index: 9;
+
+  &__list {
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    &__li {
+      background-color: $color_gold;
+      padding: 5px 10px;
+      margin: 5px;
+      border-radius: 5px;
+      font-weight: 700;
+      & > a {
+        text-decoration: none;
+        color: $color_dark;
+        font-size: 10px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}

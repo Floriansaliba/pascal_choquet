@@ -3,7 +3,7 @@ import NavBar from '../NavBar/NavBar';
 
 export const Header = () => {
   return (
-    <header className='header'>
+    <header className='header' id='header'>
       <Logo />
       <NavBar />
     </header>

@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import map from '../../assets/images/carte_metropole.jpg';
 import villes from '../../data/villes.js';
 
-function Sectorisation() {
+function Sectorisation({ sectorisationSection }) {
   const [message, setMessage] = useState(null);
 
   const handleChange = (e) => {
@@ -32,8 +32,24 @@ function Sectorisation() {
     }
   };
 
+  const displayMessage = (message) => {
+    if (message === "Je n'interviens pas dans cette zone") {
+      return <p className='paragraphe--unvalidation'>{message}</p>;
+    } else if (message === 'Le code postal saisi est erroné') {
+      return <p className='paragraphe--unvalidation'>{message}</p>;
+    } else if (message === null) {
+      return;
+    } else {
+      return <p className='paragraphe--validation'>{message}</p>;
+    }
+  };
+
   return (
-    <section className='sectorisation'>
+    <section
+      className='sectorisation'
+      id='sectorisation'
+      ref={sectorisationSection}
+    >
       <h2 className='section-title'>Mon secteur d'intervention</h2>
       <p className='paragraphe'>
         "J'interviens sur Rennes Métropole. Veuillez entrer votre code postal
@@ -41,19 +57,16 @@ function Sectorisation() {
         d'intervention."
       </p>
       <br />
-      <br />
-      <label htmlFor='postal-code' className='paragraphe'>
-        Votre code postal : <br />
-      </label>
+
       <input
         className='input'
         onChange={handleChange}
         type='number'
         name='postal-code'
+        placeholder='Votre code postal'
       />
       <br />
-      <br />
-      <p className='paragraphe'>{message}</p>
+      {displayMessage(message)}
 
       <div className='sectorisation__imgFrame'>
         <img

@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { MobileNavContext } from '../../pages/Home/Home';
 
 function BurgerMenu() {
+  const { setMobileNav } = useContext(MobileNavContext);
+
   return (
     <svg
+      onClick={() => {
+        setMobileNav((mobileNav) => !mobileNav);
+      }}
       className='burgersvg'
       xmlns='http://www.w3.org/2000/svg'
       viewBox='0 0 448 512'
