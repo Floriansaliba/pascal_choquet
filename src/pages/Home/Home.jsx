@@ -10,6 +10,7 @@ import Contact from '../../components/Contact/Contact.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
 import { createContext, useRef, useState } from 'react';
 import MobileNav from '../../components/MobileNav/MobileNav.jsx';
+import ScrollToTop from '../../components/ScrollToTop/ScrollToTop.jsx';
 
 export const ModalContext = createContext();
 export const MobileNavContext = createContext();
@@ -28,7 +29,13 @@ export const Home = () => {
     <ModalContext.Provider value={{ modale, setModale }}>
       <MobileNavContext.Provider value={{ mobileNav, setMobileNav }}>
         <section id='home'>
-          <Header />
+          <Header
+            servicesSection={servicesSection}
+            tarifSection={tarifSection}
+            sectorisationSection={sectorisationSection}
+            qualitySection={qualitySection}
+            avisSection={avisSection}
+          />
           <MobileNav
             setMobileNav={setMobileNav}
             servicesSection={servicesSection}
@@ -55,6 +62,7 @@ export const Home = () => {
             <Contact />
             <Footer />
           </div>
+          <ScrollToTop />
         </section>
       </MobileNavContext.Provider>
     </ModalContext.Provider>

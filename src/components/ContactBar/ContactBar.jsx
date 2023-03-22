@@ -65,7 +65,7 @@ function ContactBar() {
         </div>
         <div className='contact-bar__container'>
           <svg
-            class='contact-bar__svgPhone'
+            className='contact-bar__svgPhone'
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 512 512'
           >

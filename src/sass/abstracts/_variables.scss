@@ -1,7 +1,8 @@
 //Font size
 $fontSize_normal: 18px;
 $fontSize_small: 13px;
-$fontSize_big: 34px;
+$fontSize-medium: 30px;
+$fontSize_big: 44px;
 
 // Colors
 $color_light: #e7e7e7;
@@ -9,22 +10,13 @@ $color_dark: #171516;
 $color_dark-light: #272424;
 $color_important: #36a6a0;
 $color_gold: #f7b432;
-$color_background: radial-gradient(
-    ellipse farthest-corner at right bottom,
-    #fedb37 0%,
-    #fdb931 8%,
-    #9f7928 30%,
-    #8a6e2f 40%,
-    transparent 80%
-  ),
-  radial-gradient(
-    ellipse farthest-corner at left top,
-    #ffffff 0%,
-    #ffffac 8%,
-    #d1b464 25%,
-    #5d4a1f 62.5%,
-    #5d4a1f 100%
-  );
+$color_background: linear-gradient(
+  45deg,
+  rgba(23, 21, 22, 1) 0%,
+  rgba(247, 180, 50, 1) 45%,
+  rgba(247, 180, 50, 1) 59%,
+  rgba(231, 231, 231, 1) 100%
+);
 
 //Media queries
 $sm: 576px;

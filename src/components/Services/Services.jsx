@@ -5,10 +5,11 @@ function Services({ servicesSection }) {
     <section className='services' id='services' ref={servicesSection}>
       <h2 className='section-title'>Mes services</h2>
       <p className='paragraphe'>
-        "Spécialisé en serrurerie dans le dépannage et les interventions
-        d'urgence auprès des particuliers et des professionnels, je suis à même
-        de répondre au mieux à vos attentes dans les 30 minutes pour votre
-        habitation, vos locaux professionnels, ou votre véhicule."
+        "Spécialisé en serrurerie pour les dépannages et les interventions
+        d'urgence auprès des particuliers et des professionnels, je suis en
+        mesure de répondre au mieux à vos attentes en moins de 30 minutes, que
+        ce soit pour votre habitation, vos locaux professionnels ou votre
+        véhicule."
       </p>
       <h3 className='section-subtitle'>Mes prestations :</h3>
       <ul className='services__list'>

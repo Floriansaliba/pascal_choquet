@@ -10,7 +10,7 @@
   justify-content: space-between;
   align-items: center;
 
-  background: $color_gold;
+  background: $color_background;
 }
 
 .nav {
@@ -59,11 +59,13 @@
   .nav {
     flex-direction: column;
     &__list {
+      margin-top: 10px;
       padding-left: 40px;
       padding-right: 40px;
 
       &__el {
         padding: 5px 10px;
+        color: $color_light;
         background-color: $color_dark;
         border-radius: 5px;
         margin-right: 10px;
@@ -85,11 +87,13 @@
   .nav {
     flex-direction: column;
     &__list {
+      margin-top: 10px;
       padding-left: 40px;
       padding-right: 40px;
 
       &__el {
         padding: 5px 10px;
+        color: $color_light;
         background-color: $color_dark;
         border-radius: 5px;
         margin-right: 10px;
@@ -117,6 +121,7 @@
 
       &__el {
         padding: 5px 10px;
+        color: $color_light;
         background-color: $color_dark;
         border-radius: 5px;
         margin-right: 10px;
@@ -144,6 +149,7 @@
 
       &__el {
         padding: 5px 10px;
+        color: $color_light;
         background-color: $color_dark;
         border-radius: 5px;
         margin-right: 10px;

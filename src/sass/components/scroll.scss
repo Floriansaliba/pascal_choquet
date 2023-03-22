@@ -1,0 +1,24 @@
+.scroll {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background-color: $color-gold;
+  border-radius: 50%;
+  bottom: 50px;
+  right: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    cursor: pointer;
+  }
+  & > svg {
+    width: 30px;
+    height: 30px;
+    & > path {
+      fill: $color-dark;
+    }
+  }
+}

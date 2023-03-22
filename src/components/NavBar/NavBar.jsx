@@ -3,7 +3,13 @@ import { ModalContext } from '../../pages/Home/Home';
 
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
 
-function NavBar() {
+function NavBar({
+  servicesSection,
+  tarifSection,
+  sectorisationSection,
+  qualitySection,
+  avisSection,
+}) {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   const { modale, setModale } = useContext(ModalContext);
@@ -25,35 +31,55 @@ function NavBar() {
     return (
       <nav className='nav'>
         <ul className='nav__list'>
-          <li className='nav__list__el'>
-            <a href='#header'>ACCUEIL</a>
+          <li
+            className='nav__list__el'
+            onClick={() => {
+              window.scroll({ top: 400, behavior: 'smooth' });
+            }}
+          >
+            SERVICES
           </li>
-          <li className='nav__list__el'>
-            <a href='#services'>SERVICES</a>
+          <li
+            className='nav__list__el'
+            onClick={() => {
+              window.scroll({ top: 1400, behavior: 'smooth' });
+            }}
+          >
+            SECTORISATION
           </li>
-          <li className='nav__list__el'>
-            <a href='#sectorisation'>SECTORISATION</a>
+          <li
+            className='nav__list__el'
+            onClick={() => {
+              window.scroll({ top: 2500, behavior: 'smooth' });
+            }}
+          >
+            TARIFS
           </li>
-          <li className='nav__list__el'>
-            <a href='#tarifs'>TARIFS</a>
+          <li
+            className='nav__list__el'
+            onClick={() => {
+              window.scroll({ top: 3500, behavior: 'smooth' });
+            }}
+          >
+            QUALITE
           </li>
-          <li className='nav__list__el'>
-            <a href='#quality'>QUALITE</a>
-          </li>
-          <li className='nav__list__el'>
-            <a href='#avis'>AVIS CLIENTS</a>
+          <li
+            className='nav__list__el'
+            onClick={() => {
+              window.scroll({ top: 4700, behavior: 'smooth' });
+            }}
+          >
+            AVIS CLIENTS
           </li>
 
-          <li className='nav__list__el'>
-            <a
-              onClick={(e) => {
-                e.preventDefault();
-                setModale((modale) => !modale);
-              }}
-              href='/'
-            >
-              CONTACT
-            </a>
+          <li
+            className='nav__list__el'
+            onClick={(e) => {
+              e.preventDefault();
+              setModale((modale) => !modale);
+            }}
+          >
+            CONTACT
           </li>
         </ul>
       </nav>
