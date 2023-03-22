@@ -2,7 +2,7 @@
   "name": "pascal-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Floriansaliba.github.io/pascal_choquet",
+  "homepage": "https://floriansaliba.github.io/pascal_choquet/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
