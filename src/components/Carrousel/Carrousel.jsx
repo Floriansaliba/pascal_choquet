@@ -3,7 +3,8 @@ import lostKeys from '../../assets/images/background.jpg';
 import doorOpened from '../../assets/images/door_opened.jpeg';
 import ouvertureVoiture from '../../assets/images/ouverture_voiture.jpg';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import Aos from 'aos';
 
 function Carrousel() {
   let [counter, setCounter] = useState(0);
@@ -47,8 +48,21 @@ function Carrousel() {
     }
   };
 
+  //Utilisation d'AOS pour les effets au Scroll
+
+  useEffect(() => {
+    Aos.init({
+      duration: 2000,
+    });
+  }, []);
+
   return (
-    <section className='carrousel'>
+    <section
+      className='carrousel'
+      data-aos='fade-left'
+      data-aos-duration='500'
+      data-aos-delay='500'
+    >
       <img
         className='carrousel__img'
         src={pictures[counter].image}

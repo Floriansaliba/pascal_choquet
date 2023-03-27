@@ -12,18 +12,13 @@ function MobileNav({
   const { mobileNav } = useContext(MobileNavContext);
   const { setModale } = useContext(ModalContext);
 
-  const scrollToElement = (refElement) => {
-    refElement.current.scrollIntoView({ behavior: 'smooth' });
-    setMobileNav(false);
-  };
-
   if (mobileNav) {
     return (
       <nav className='mobile-nav'>
         <ul className='mobile-nav__list'>
           <li
             onClick={() => {
-              scrollToElement(servicesSection);
+              window.scroll({ top: 250, behavior: 'smooth' });
             }}
             className='mobile-nav__list__li'
           >
@@ -31,7 +26,7 @@ function MobileNav({
           </li>
           <li
             onClick={() => {
-              scrollToElement(sectorisationSection);
+              window.scroll({ top: 1400, behavior: 'smooth' });
             }}
             className='mobile-nav__list__li'
           >
@@ -39,7 +34,7 @@ function MobileNav({
           </li>
           <li
             onClick={() => {
-              scrollToElement(tarifSection);
+              window.scroll({ top: 2300, behavior: 'smooth' });
             }}
             className='mobile-nav__list__li'
           >
@@ -47,7 +42,7 @@ function MobileNav({
           </li>
           <li
             onClick={() => {
-              scrollToElement(qualitySection);
+              window.scroll({ top: 3250, behavior: 'smooth' });
             }}
             className='mobile-nav__list__li'
           >
@@ -55,7 +50,7 @@ function MobileNav({
           </li>
           <li
             onClick={() => {
-              scrollToElement(avisSection);
+              window.scroll({ top: 4700, behavior: 'smooth' });
             }}
             className='mobile-nav__list__li'
           >

@@ -30,20 +30,15 @@
     padding-right: 40px;
 
     &__el {
-      padding: 5px 10px;
-
+      padding: 10px 20px;
+      font-size: $fontSize_small;
       background-color: $color_important;
       border-radius: 5px;
       margin-right: 5px;
       margin-bottom: 5px;
 
-      & > a {
-        text-decoration: none;
-        color: $color_light;
-        font-size: $fontSize_small;
-        &:hover {
-          cursor: pointer;
-        }
+      &:hover {
+        cursor: pointer;
       }
     }
   }
@@ -64,15 +59,14 @@
       padding-right: 40px;
 
       &__el {
-        padding: 5px 10px;
+        letter-spacing: 2px;
+        padding: 10px 20px;
+        font-size: $fontSize_small;
         color: $color_light;
         background-color: $color_dark;
         border-radius: 5px;
         margin-right: 10px;
         margin-bottom: 10px;
-        & > a {
-          font-size: $fontSize_small;
-        }
       }
     }
   }
@@ -92,15 +86,14 @@
       padding-right: 40px;
 
       &__el {
-        padding: 5px 10px;
+        letter-spacing: 2px;
+        padding: 10px 20px;
+        font-size: $fontSize_small;
         color: $color_light;
         background-color: $color_dark;
         border-radius: 5px;
         margin-right: 10px;
         margin-bottom: 10px;
-        & > a {
-          font-size: $fontSize_small;
-        }
       }
     }
   }
@@ -120,15 +113,14 @@
       padding-right: 40px;
 
       &__el {
-        padding: 5px 10px;
+        letter-spacing: 2px;
+        padding: 10px 20px;
+        font-size: $fontSize_small;
         color: $color_light;
         background-color: $color_dark;
         border-radius: 5px;
         margin-right: 10px;
         margin-bottom: 10px;
-        & > a {
-          font-size: $fontSize_normal;
-        }
       }
     }
   }
@@ -148,15 +140,14 @@
       padding-right: 40px;
 
       &__el {
-        padding: 5px 10px;
+        padding: 10px 20px;
+        font-size: $fontSize_small;
+        letter-spacing: 2px;
         color: $color_light;
         background-color: $color_dark;
         border-radius: 5px;
         margin-right: 10px;
         margin-bottom: 10px;
-        & > a {
-          font-size: $fontSize_normal;
-        }
       }
     }
   }

@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import Aos from 'aos';
+import React, { useEffect, useState } from 'react';
 
 import map from '../../assets/images/carte_metropole.jpg';
 import villes from '../../data/villes.js';
@@ -44,14 +45,22 @@ function Sectorisation({ sectorisationSection }) {
     }
   };
 
+  //Utilisation d'AOS pour les effets au Scroll
+
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <section
       className='sectorisation'
       id='sectorisation'
       ref={sectorisationSection}
+      data-aos='fade-up'
+      data-aos-duration='500'
     >
       <h2 className='section-title'>Mon secteur d'intervention</h2>
-      <p className='paragraphe'>
+      <p className='paragraphe' data-aos='fade-up' data-aos-duration='500'>
         "J'interviens sur la métropole de Rennes. Veuillez entrer votre code
         postal ci-dessous afin de vous assurer que vous vous trouvez bien dans
         ma zone d'intervention."
@@ -64,6 +73,8 @@ function Sectorisation({ sectorisationSection }) {
         type='number'
         name='postal-code'
         placeholder='Votre code postal'
+        data-aos='zoom-in'
+        data-aos-duration='500'
       />
       <br />
       {displayMessage(message)}
@@ -73,6 +84,8 @@ function Sectorisation({ sectorisationSection }) {
           className='sectorisation__img'
           src={map}
           alt='Métropole de Rennes'
+          data-aos='flip-right'
+          data-aos-duration='1000'
         />
       </div>
     </section>

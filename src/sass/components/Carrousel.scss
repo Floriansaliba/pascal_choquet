@@ -9,20 +9,20 @@
     object-fit: cover;
   }
   &__text {
+    background-color: $color-gold;
+    display: inline-block;
     position: absolute;
-    width: 90%;
+
     margin: auto;
-    top: 10px;
-    right: 0px;
-    font-weight: 800;
+    bottom: 40px;
+    right: 50%;
+    border-radius: 10px;
+    transform: translate(50%, 0);
+    font-weight: 50%;
     text-align: center;
-    text-shadow: 2px 0 $color-dark-light, -2px 0 $color-dark-light,
-      0 2px $color_dark-light, 0 -2px $color-dark-light,
-      1px 1px $color-dark-light, -1px -1px $color-dark-light,
-      1px -1px $color-dark-light, -1px 1px $color-dark-light;
-    color: $color-gold;
+
     padding: 10px;
-    font-size: 34px;
+    font-size: $fontSize_normal;
   }
   &__left-arrow {
     position: absolute;

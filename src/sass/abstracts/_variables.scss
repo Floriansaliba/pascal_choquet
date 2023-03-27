@@ -43,3 +43,12 @@ $xl: 1200px;
     left: 0px;
   }
 }
+
+@keyframes buttonNav {
+  from {
+    background-color: $color_dark;
+  }
+  from {
+    background-color: $color_light;
+  }
+}
