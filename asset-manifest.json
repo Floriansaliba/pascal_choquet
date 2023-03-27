@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pascal_choquet/static/css/main.6a8240f7.css",
-    "main.js": "/pascal_choquet/static/js/main.df77420a.js",
+    "main.css": "/pascal_choquet/static/css/main.427fd599.css",
+    "main.js": "/pascal_choquet/static/js/main.3b72c96d.js",
     "static/js/787.777a6086.chunk.js": "/pascal_choquet/static/js/787.777a6086.chunk.js",
     "static/media/background.jpg": "/pascal_choquet/static/media/background.af25685f2bf43bbdf066.jpg",
     "static/media/carte_metropole.jpg": "/pascal_choquet/static/media/carte_metropole.61bba7298dae06b3cce2.jpg",
@@ -10,12 +10,12 @@
     "static/media/door_opened.jpeg": "/pascal_choquet/static/media/door_opened.a084ff928d79f511479f.jpeg",
     "static/media/logo.png": "/pascal_choquet/static/media/logo.b590482ec77f46839660.png",
     "index.html": "/pascal_choquet/index.html",
-    "main.6a8240f7.css.map": "/pascal_choquet/static/css/main.6a8240f7.css.map",
-    "main.df77420a.js.map": "/pascal_choquet/static/js/main.df77420a.js.map",
+    "main.427fd599.css.map": "/pascal_choquet/static/css/main.427fd599.css.map",
+    "main.3b72c96d.js.map": "/pascal_choquet/static/js/main.3b72c96d.js.map",
     "787.777a6086.chunk.js.map": "/pascal_choquet/static/js/787.777a6086.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a8240f7.css",
-    "static/js/main.df77420a.js"
+    "static/css/main.427fd599.css",
+    "static/js/main.3b72c96d.js"
   ]
 }
