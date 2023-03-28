@@ -61,9 +61,9 @@ function Sectorisation({ sectorisationSection }) {
     >
       <h2 className='section-title'>Mon secteur d'intervention</h2>
       <p className='paragraphe' data-aos='fade-up' data-aos-duration='500'>
-        "J'interviens sur la métropole de Rennes. Veuillez entrer votre code
-        postal ci-dessous afin de vous assurer que vous vous trouvez bien dans
-        ma zone d'intervention."
+        "J'interviens sur la métropole de <strong>Rennes</strong>. Veuillez
+        entrer votre code postal ci-dessous afin de vous assurer que vous vous
+        trouvez bien dans ma <strong>zone d'intervention</strong>."
       </p>
       <br />
 

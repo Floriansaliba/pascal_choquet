@@ -19,14 +19,14 @@ function Qualite({ qualitySection }) {
     >
       <h2 className='section-title'>Qualité</h2>
       <p className='paragraphe'>
-        En tant que serrurier professionnel, je suis fier de mon engagement
-        envers la qualité de mes services.
-        <br /> J'offre des devis gratuits pour tous mes travaux, afin que mes
-        clients sachent exactement ce qu'ils vont payer avant le début des
-        travaux.
+        En tant que <strong>serrurier professionnel</strong>, je suis fier de
+        mon engagement envers la qualité de mes services.
+        <br /> J'offre des <strong>devis gratuits</strong> pour tous mes
+        travaux, afin que mes clients sachent exactement ce qu'ils vont payer
+        avant le début des travaux.
         <br />
-        Je suis également fier de la qualité de mes produits, qui sont tous
-        garantis pour assurer la satisfaction de mes clients.
+        Je suis également fier de la <strong>qualité</strong> de mes produits,
+        qui sont tous garantis pour assurer la satisfaction de mes clients.
         <br /> Je suis conscient de l'importance des délais et je m'engage à
         respecter les échéances que j'ai fixées.
         <br />
@@ -34,8 +34,9 @@ function Qualite({ qualitySection }) {
         claires et transparentes sur mes tarifs, afin que mes clients sachent
         exactement ce qu'ils paient et pourquoi.
         <br />
-        Chez moi, la satisfaction de mes clients est ma priorité absolue, et je
-        travaille dur pour garantir un service de qualité à chaque fois.
+        Chez moi, la <strong>satisfaction</strong> de mes clients est ma
+        priorité absolue, et je travaille dur pour garantir un{' '}
+        <strong>service de qualité</strong> à chaque fois.
       </p>
       <h3 className='section-subtitle'>Mes marques</h3>
       <ul className='quality__list'>

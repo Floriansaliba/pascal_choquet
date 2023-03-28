@@ -1,0 +1,103 @@
+.nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    &__el {
+      padding: 10px 20px;
+      font-size: $fontSize_small;
+      background-color: $color_important;
+      border-radius: 5px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        box-shadow: 2px 2px;
+        transition: all 0.2s ease-in-out;
+      }
+      &:active {
+        transform: scale(1);
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $sm) and (max-width: $md) {
+  .nav {
+    flex-direction: column;
+    &__list {
+      margin-top: 10px;
+      padding-left: 40px;
+      padding-right: 40px;
+
+      &__el {
+        letter-spacing: 2px;
+        padding: 5px 10px;
+        font-size: $fontSize_small;
+        color: $color_light;
+        background-color: $color_dark;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $md) and (max-width: $lg) {
+  .nav {
+    flex-direction: column;
+    &__list {
+      margin-top: 10px;
+      padding-left: 40px;
+      padding-right: 40px;
+
+      &__el {
+        letter-spacing: 2px;
+        padding: 10px 20px;
+        font-size: $fontSize_small;
+        color: $color_light;
+        background-color: $color_dark;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $lg) {
+  .nav {
+    flex-direction: column;
+    &__list {
+      margin-top: 20px;
+      padding-left: 40px;
+      padding-right: 40px;
+
+      &__el {
+        letter-spacing: 2px;
+        padding: 10px 20px;
+        font-size: $fontSize_small;
+        color: $color_light;
+        background-color: $color_dark;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

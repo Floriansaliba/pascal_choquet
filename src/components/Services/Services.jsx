@@ -19,11 +19,13 @@ function Services({ servicesSection }) {
     >
       <h2 className='section-title'>Mes services</h2>
       <p className='paragraphe'>
-        "Spécialisé en serrurerie pour les dépannages et les interventions
-        d'urgence auprès des particuliers et des professionnels, je suis en
-        mesure de répondre au mieux à vos attentes en moins de 30 minutes, que
-        ce soit pour votre habitation, vos locaux professionnels ou votre
-        véhicule."
+        "Spécialisé en <strong>serrurerie</strong> pour les dépannages et les
+        interventions d'urgence auprès des <strong>particuliers</strong> et des{' '}
+        <strong>professionnels</strong>, je suis en mesure de répondre au mieux
+        à vos attentes en moins de 30 minutes, que ce soit pour votre
+        <strong> habitation</strong>, vos <strong>locaux professionnels</strong>{' '}
+        ou votre
+        <strong> véhicule</strong>."
       </p>
       <h3 className='section-subtitle'>Mes prestations :</h3>
       <ul className='services__list'>

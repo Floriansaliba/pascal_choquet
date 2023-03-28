@@ -18,12 +18,14 @@ function Avis({ avisSection }) {
     >
       <h2 className='section-title'>Avis</h2>
       <p className='paragraphe'>
-        Je suis fier de partager les avis positifs de mes clients.
-        <br /> La satisfaction client est la priorité absolue de mon entreprise
-        et je suis heureux de constater que mes clients sont satisfaits de mes
-        services.
+        Je suis fier de partager les <strong>avis positifs</strong> de mes
+        clients.
+        <br /> La <strong>satisfaction client</strong> est la priorité absolue
+        de mon entreprise et je suis heureux de constater que mes clients sont
+        satisfaits de mes services.
         <br /> Leurs commentaires sont une preuve de la qualité de mon travail
-        et de mon engagement à fournir des services fiables et efficaces. <br />
+        et de mon engagement à fournir des{' '}
+        <strong>services fiables et efficaces</strong>. <br />
         J'apprécie tous les retours que j'ai reçus, car ils me permettent
         d'améliorer constamment mes services pour répondre aux besoins de mes
         clients.
